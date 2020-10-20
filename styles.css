@@ -1,0 +1,177 @@
+body {
+    background-color: black;
+    /* background-image: url("shield.jpg"); */
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 40%;
+    background-position-y: -100%;
+    background-blend-mode: unset;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color: green;
+    background-color: black;
+    text-align: center;
+    text-shadow: greenyellow 1px 2px 5px;
+    text-transform: uppercase;
+    padding-block: 200px;   
+}
+
+b {
+    color: green;
+}
+
+nav {
+    font-size: 200%;
+    font-family: fantasy;
+    background-color: black;
+    text-shadow: (30, 30, 30)
+    text-align: center;
+    color: green;
+}
+
+a {
+    text-decoration-line: none;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 100px;
+    text-align: center;
+}
+
+.dpImage {
+    border-radius: 20%;
+    box-shadow: white 10px 10px 20px;
+}
+
+.lockImage {
+    border-radius: 10%;
+    box-shadow: white 10px 10px 20px;
+
+}
+
+
+.box {
+    /* display:    inline-block; */
+    height: 200px;
+    width: 200px;
+    background: blue;
+    margin: 10px;
+    border: 3px solid yellow;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: ;
+    margin: 10px;
+    border:  3px solid red;
+    padding: 50px;
+}
+
+@keyframes fadeMe {
+    0% { opacity: 1;}
+    100% { opacity: 0;}
+}
+
+#box1 {
+    animation-name: fadeMe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes rotation {
+    0% { transform: rotate(0deg);}
+    /* 50% { transform: rotate(180deg);} */
+    100% { transform: rotate(360deg);}
+}
+
+#box2 {
+    animation-name: rotation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 50%;
+    background-image: radial-gradient(circle, purple, orange, yellow, pink, purple);
+    font-size: 20px;
+    color: brown;
+}
+
+#box5 {
+    animation-name: rotation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    border-radius: 50%;
+    background-image: radial-gradient(circle, purple, orange, yellow, pink, purple);
+    font-size: 20px;
+    color: brown;
+}
+
+@keyframes getBigger {
+    0% { transform: scale(.5);}
+    /* 50% { transform: scale(2);} */
+    50% { transform: scale(2);}
+}
+
+#box3 {
+    animation: getBigger infinite 2s ease-in; 
+    border-radius: 50%;
+    background: orange;
+}
+
+@keyframes changeColors {
+    0% { background-color: grey;}
+    25% { background-color: purple;}
+    50% { background-color: yellow;}
+    75% { background-color: pink;}
+    100% { background-color: grey;}
+}
+
+#box4 {
+    animation: changeColors 2s infinite;
+}
+
+@keyframes moveBox {
+    0% { left: 0px; top: 0 px;}
+    25% { left: 100px; top: 0 px;}
+    50% { left: 100px; top: 100 px;}
+    75% { left: 0px; top: 100 px;}
+    100% { left: 0px; top: 0 px;}
+}
+
+#box6 {
+    position: relative;
+    animation: moveBox 1s 3s infinite;
+    background-color: saddlebrown;
+}
+
+#box7 {
+    top: 100px;
+    left: 200px;
+    position:   fixed;
+    background-color: burlywood;
+}
+
+#box8 {
+    top: 20px;
+    left: 20px;
+    position:   relative;
+    background-color: darkred;
+}
+
+form input, textarea, button {
+    display: center;
+    margin: 5px;
+    column
+}
