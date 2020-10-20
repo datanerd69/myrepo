@@ -18,11 +18,10 @@ body {
           padding: 20px;
           font-size: 150%;
           z-index:10;
-  
       }
   
       /* Christian Fredrik H.a */
-      
+
       .a {
           grid-column: col 1 / span  2;
           grid-row: row 1 ;
@@ -51,3 +50,10 @@ body {
           background-color: rgba(49,121,207, 0.5);
           z-index: 20;
       }
+
+      .g {
+        grid-column: col 1 / span 5;
+        grid-row: row 2  ;
+        background-color: rgba(207, 49, 186, 0.5);
+        z-index: 20;
+    }
